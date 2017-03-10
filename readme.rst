@@ -11,5 +11,11 @@ You'll need to install docker: https://www.docker.com/community-edition#/downloa
 .. code::
 
   $ make build run
-  $ make test
 
+The service can be invoked with:
+
+``curl --data-binary "@test_data/rocket.abc" http://localhost:9090/abcecho``
+
+``curl --data-binary "@test_data/rocket.abc" http://localhost:9090/abctree``
+
+``curl --data-binary "@test_data/rocket.abc" http://localhost:9090/pyalembic``

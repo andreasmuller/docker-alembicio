@@ -11,18 +11,12 @@ test:
 
 	echo "####### ABCECHO #######"
 
-	curl \
-	--data-binary "@test_data/rocket.abc" \
-	http://localhost:9090/abcecho
+	curl --data-binary "@test_data/rocket.abc" http://localhost:9090/abcecho
 
 	echo "####### ABCTREE #######"
 
-	curl \
-	--data-binary "@test_data/rocket.abc" \
-	http://localhost:9090/abctree
+	curl --data-binary "@test_data/rocket.abc" http://localhost:9090/abctree
 
 	echo "####### PYALEMBIC #######"
 
-	curl \
-	--data-binary "@test_data/rocket.abc" \
-	http://localhost:9090/pyalembic
+	curl --data-binary "@test_data/rocket.abc" http://localhost:9090/pyalembic
