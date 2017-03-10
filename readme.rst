@@ -10,5 +10,6 @@ You'll need to install docker: https://www.docker.com/community-edition#/downloa
 
 .. code::
 
-  $ make build run test
+  $ make build run
+  $ make test
 

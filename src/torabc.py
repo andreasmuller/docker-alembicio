@@ -2,7 +2,6 @@ from tornado import web, ioloop, gen
 import alembic
 
 import os
-print(os.getcwd())
 
 from handlers.ABCEchoHandler import ABCEchoHandler
 from handlers.ABCTreeHandler import ABCTreeHandler

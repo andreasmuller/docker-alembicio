@@ -25,7 +25,8 @@ RUN git clone https://github.com/alembic/alembic && \
     cmake -DALEMBIC_PYILMBASE_PYIMATH_LIB=/usr/local/lib/libPyImath.so -DUSE_PYALEMBIC=ON -DUSE_HDF5=ON -DALEMBIC_LIB_USES_BOOST=ON . && \
     make -j 4 install && \
     cd .. && \
-    cp /alembic/python/PyAlembic/alembic.so /usr/local/lib/
+    cp /alembic/python/PyAlembic/alembic.so /usr/local/lib/ && \
+    rm -rf alembic
 
 RUN mkdir -p /usr/local/lib/python/
 
